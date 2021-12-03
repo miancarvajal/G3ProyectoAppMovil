@@ -17,12 +17,12 @@ public class Profes extends AppCompatActivity {
         tv_registrar = findViewById(R.id.tv_registrar);
 
         tv_registrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentReg = new Intent(Profes.this,Registro.class);
-                Profes.this.startActivity(intentReg);
+                @Override
+                public void onClick(View v) {
+                    Intent intentReg = new Intent(Profes.this,Registro.class);
+                    Profes.this.startActivity(intentReg);
 
-            }
+                }
         });
     }
 }
