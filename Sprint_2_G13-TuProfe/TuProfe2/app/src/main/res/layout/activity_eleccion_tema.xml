@@ -15,142 +15,48 @@
         android:layout_gravity="center"
         android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="46dp"
+        android:layout_marginBottom="38dp"
         android:text="Seleccione la Asignatura"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_Matematicas"
+        app:layout_constraintBottom_toTopOf="@+id/lvAsignaturas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_Matematicas"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="11dp"
-        android:text="Matematicas"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_Español"
+    <ListView
+        android:id="@+id/lvAsignaturas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="425dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <TextView
-        android:id="@+id/tv_Español"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="2dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="16dp"
-        android:text="Español"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_Fisica"
-        app:layout_constraintEnd_toEndOf="@+id/tv_Quimica"
-        app:layout_constraintStart_toStartOf="@+id/tv_Matematicas"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Matematicas" />
-
-    <TextView
-        android:id="@+id/tv_Fisica"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="19dp"
-        android:text="Fisica"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_Quimica"
-        app:layout_constraintEnd_toEndOf="@+id/tv_Quimica"
-        app:layout_constraintStart_toStartOf="@+id/tv_Español"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Español" />
-
-    <TextView
-        android:id="@+id/tv_Quimica"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="15dp"
-        android:text="Quimica"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_Ingles"
-        app:layout_constraintEnd_toEndOf="@+id/tv_Ingles"
-        app:layout_constraintStart_toStartOf="@+id/tv_Ingles"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Fisica" />
-
-    <TextView
-        android:id="@+id/tv_Ingles"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="27dp"
-        android:text="Ingles"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_Sociales"
-        app:layout_constraintEnd_toEndOf="@+id/tv_Sociales"
-        app:layout_constraintStart_toStartOf="@+id/tv_Sociales"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Quimica" />
-
-    <TextView
-        android:id="@+id/tv_Informatica"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="44dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="66dp"
-        android:text="Informatica"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Sociales" />
-
-    <TextView
-        android:id="@+id/tv_Sociales"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="27dp"
-        android:text="Sociales"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_Informatica"
-        app:layout_constraintEnd_toEndOf="@+id/tv_Informatica"
-        app:layout_constraintStart_toStartOf="@+id/tv_Informatica"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Ingles" />
-
     <Button
 
         android:id="@+id/button2"
-        android:layout_width="0dp"
+        android:layout_width="154dp"
         android:layout_height="0dp"
         android:layout_gravity="center"
 
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="34dp"
         android:text="Iniciar"
         app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Informatica" />
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/lvAsignaturas" />
 
     <Button
 
         android:id="@+id/button3"
-        android:layout_width="0dp"
+        android:layout_width="165dp"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="45dp"
         android:text="Profes"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

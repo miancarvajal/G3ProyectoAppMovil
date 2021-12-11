@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
     startActivity(goProfes);
     }
 
+    public void IrAsignatura(View view){
+        Intent goAsignatura = new Intent(this, EleccionTema.class);
+        startActivity(goAsignatura);
+    }
+
 }

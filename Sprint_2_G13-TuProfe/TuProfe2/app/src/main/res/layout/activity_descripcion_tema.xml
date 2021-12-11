@@ -18,12 +18,12 @@
         android:text="Por Favor, Describa el Tema."
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/txtDescripcion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/txtDescripcion"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
@@ -43,10 +43,11 @@
         android:layout_height="47dp"
         android:layout_marginEnd="106dp"
         android:layout_marginBottom="66dp"
+        android:onClick="continuar"
         android:text="Aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
