@@ -25,11 +25,11 @@ public class DescripcionTema extends AppCompatActivity {
     }
 
     public void continuar(View view){
-        Intent pasoVariables = new Intent(this, Usuario.class);
+        Intent goUsuario = new Intent(this, Usuario.class);
         descripcionTema=descripcionAsg.getText().toString();
-        pasoVariables.putExtra("materiaTema", recAsignatura);
-        pasoVariables.putExtra("descripcionTema", descripcionTema);
-        startActivity(pasoVariables);
+        goUsuario.putExtra("materiaTema", recAsignatura);
+        goUsuario.putExtra("descripcionTema", descripcionTema);
+        startActivity(goUsuario);
 
     }
 }

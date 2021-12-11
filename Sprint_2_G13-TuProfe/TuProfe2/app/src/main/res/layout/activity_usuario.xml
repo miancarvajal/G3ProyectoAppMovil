@@ -18,12 +18,12 @@
         android:text="Ingrese Informacion De Contacto"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombreUsr"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtNombreUsr"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="21dp"
@@ -31,13 +31,13 @@
         android:layout_marginBottom="29dp"
         android:hint="Nombre Completo"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/txtIdUsr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtIdUsr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
@@ -45,13 +45,13 @@
         android:layout_marginBottom="36dp"
         android:hint="Numero de Identificaion"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintBottom_toTopOf="@+id/txtCelUsr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreUsr" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txtCelUsr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
@@ -59,13 +59,13 @@
         android:layout_marginBottom="33dp"
         android:hint="Numero Celular"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintBottom_toTopOf="@+id/txtMailUsr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdUsr" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/txtMailUsr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
@@ -73,13 +73,13 @@
         android:layout_marginBottom="32dp"
         android:hint="Correo Electronico"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/editText5"
+        app:layout_constraintBottom_toTopOf="@+id/txtCiudadUsr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCelUsr" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/txtCiudadUsr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
@@ -87,13 +87,13 @@
         android:layout_marginBottom="42dp"
         android:hint="Ciudad"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/editText6"
+        app:layout_constraintBottom_toTopOf="@+id/txtDirUsr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMailUsr" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/txtDirUsr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
@@ -104,18 +104,19 @@
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCiudadUsr" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="209dp"
         android:layout_height="0dp"
         android:layout_marginBottom="36dp"
+        android:onClick="registrarUsuario"
         android:text="Aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDirUsr" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
