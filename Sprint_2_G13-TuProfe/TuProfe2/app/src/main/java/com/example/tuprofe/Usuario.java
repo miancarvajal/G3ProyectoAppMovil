@@ -58,6 +58,8 @@ public class Usuario extends AppCompatActivity {
             dbTuProfe.close();
             Toast.makeText(this, "Registro exitoso del usuario", Toast.LENGTH_SHORT).show();
             goFecha.putExtra("usuarioId", idUsuario);
+            goFecha.putExtra("asignaturaTema", recAsignatura);
+            goFecha.putExtra("descripcionTema", recDescripcion);
             startActivity(goFecha);
         }else{
             Toast.makeText(this, "Por favor llena todos los campos", Toast.LENGTH_SHORT).show();

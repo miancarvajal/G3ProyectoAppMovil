@@ -30,11 +30,12 @@ public class FechaTutoria extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fecha_tutoria);
-        getIntent().getIntExtra("usuarioId", idUsr);
+        Bundle datos = this.getIntent().getExtras();
+        idUsr = datos.getInt("usuarioId");
+        asignatura = datos.getString("asignaturaTema");
+        descTema = datos.getString("descripcionTema");
         tvFecha = (TextView) findViewById(R.id.txtDate);
         btnFecha = (Button) findViewById(R.id.btnFecha);
-        asignatura= getIntent().getStringExtra("materiaTema");
-        descTema= getIntent().getStringExtra("descripcionTema");
 
         hora1 = (CheckBox) findViewById(R.id.chkHora1);
         hora2 = (CheckBox) findViewById(R.id.chkHora2);
@@ -138,8 +139,8 @@ public class FechaTutoria extends AppCompatActivity {
             dbTuProfe.insert("tutorias", null, registro);
             dbTuProfe.close();
             Toast.makeText(this, "Registro exitoso de la tutoria", Toast.LENGTH_SHORT).show();
-            Intent goInicio = new Intent(this, MainActivity.class);
-            startActivity(goInicio);
+            Intent goFin = new Intent(this, MensajeFinal.class);
+            startActivity(goFin);
         }else{
             Toast.makeText(this, "Por favor llena todos los campos", Toast.LENGTH_SHORT).show();
         }

@@ -25,9 +25,8 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
                             "PRIMARY KEY (id_profe)," +
                             "FOREIGN KEY (id_departamento) REFERENCES departamento(id_departamento)," +
                             "FOREIGN KEY (id_ciudad) REFERENCES ciudad(id_ciudad))");
-        bdTuProfe.execSQL("create table asesoria(id_asesoria int, tema text, fecha date, hora time, id_profe int, id_usuario," +
+        bdTuProfe.execSQL("create table asesoria(id_asesoria int, id_usuario int, tema text, fecha text, hora text, " +
                 "PRIMARY KEY (id_asesoria)," +
-                "FOREIGN KEY (id_profe) REFERENCES profe(id_profe)," +
                 "FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario))");
     }
 

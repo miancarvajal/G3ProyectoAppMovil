@@ -39,7 +39,7 @@
         android:layout_width="331dp"
         android:layout_height="46dp"
         android:layout_gravity="center_horizontal"
-        android:onClick="IrAsignatura"
+        android:onClick="IrAProfes"
         android:text="Profes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
