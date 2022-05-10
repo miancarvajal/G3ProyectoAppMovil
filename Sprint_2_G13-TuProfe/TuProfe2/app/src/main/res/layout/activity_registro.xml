@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registro">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro De Profesores"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/txtNombreProfe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtIdProfe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero Identificación"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtCiudadProfe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ciudad"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtDepartamentoProfe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Departamento"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtNombreUsuarioProfe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Usuario"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtPassProfe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="registrarProfesor"
+        android:text="Registrar" />
+
+
+</LinearLayout>
